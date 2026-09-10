@@ -1,0 +1,78 @@
+{
+	"name": "@nudgeai/sdk",
+	"version": "0.1.0",
+	"description": "On-device wake-word detection without the enterprise price tag. Supports Node.js, Bun, and the browser",
+	"license": "SEE LICENSE IN LICENSE",
+	"author": "Nudge",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NudgeVoiceAI/sdk-node.git"
+	},
+	"homepage": "https://nudgeai.llc",
+	"bugs": {
+		"url": "https://github.com/NudgeVoiceAI/sdk-node/issues"
+	},
+	"keywords": [
+		"nudge",
+		"wake-word",
+		"offline",
+		"audio",
+		"bun",
+		"speech"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"type": "module",
+	"main": "./dist/node.js",
+	"types": "./dist/node.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/node.d.ts",
+			"import": "./dist/node.js"
+		},
+		"./browser": {
+			"types": "./dist/browser.d.ts",
+			"import": "./dist/browser.js"
+		},
+		"./core": {
+			"types": "./dist/core.d.ts",
+			"import": "./dist/core.js"
+		}
+	},
+	"files": [
+		"dist",
+		"models",
+		"licenses",
+		"examples",
+		"docs",
+		"assets/icon-512.png",
+		"README.md",
+		"THIRD_PARTY_NOTICES.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"prebuild": "node scripts/build-keys.mjs",
+		"build": "tsc -p tsconfig.json",
+		"test": "npm run build && node --test test/streaming.test.mjs test/signature.test.mjs test/audio.test.mjs test/integration.test.mjs test/model.test.mjs",
+		"test:bun": "npm run build && bun test test/",
+		"format": "prettier --write src test examples scripts package.json tsconfig.json .prettierrc.json",
+		"format:check": "prettier --check src test examples scripts package.json tsconfig.json .prettierrc.json",
+		"prepack": "npm run build && npm run format:check",
+		"audit:dependencies": "npm audit --omit=dev --audit-level=moderate",
+		"prepublishOnly": "npm test && npm run test:bun && npm run audit:dependencies"
+	},
+	"dependencies": {
+		"onnxruntime-common": "1.29.0",
+		"onnxruntime-node": "1.21.1",
+		"onnxruntime-web": "1.29.0"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"devDependencies": {
+		"@types/node": "22.19.15",
+		"prettier": "3.6.2",
+		"typescript": "5.9.3"
+	}
+}

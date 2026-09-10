@@ -1,0 +1,68 @@
+Nudge SDK and Example Models Personal Use License, Version 1.1
+Copyright (c) 2026 Nudge. All rights reserved.
+
+1. Scope
+This license applies to the Nudge-owned code, documentation, and portions of
+the three bundled example models distributed in @nudgeai/sdk (the Software):
+models/alexa.nudge, models/hey-google.nudge, and models/hey-siri.nudge.
+The model permission includes Nudge's trained classifier weights and model
+modifications. It does not cover other models, training services, training
+software, datasets, trademarks, or third-party components.
+Third-party components, including the Apache-2.0 feature extractor in the
+example models, remain subject to their own licenses. Nothing in this license
+limits permissions granted by those third-party licenses. See
+THIRD_PARTY_NOTICES.md, models/NOTICE.md, and licenses/Apache-2.0.txt.
+
+2. Personal, noncommercial permission
+Subject to these terms, Nudge grants an individual a nonexclusive,
+nontransferable license to install, copy, run, inspect, and privately modify
+the Software solely for that individual's personal, noncommercial projects.
+Preserve this license and all copyright and attribution notices in copies.
+This permission does not include redistribution, sublicensing, or making the
+Software available as a service to others.
+
+3. Company and commercial use requires a separate paid license
+No company, business, or other organization may use the Software under the
+personal-use permission. No person may use it for an employer, client, or
+organization, in a commercial product or service, for paid work, or to generate
+commercial revenue, directly or indirectly. Internal business use, commercial
+evaluation, and development of a commercial product also require permission.
+Before any such use, contact Nudge and obtain a separate written commercial
+license and pay the applicable agreed fees. Downloading the Software,
+possessing a signed model, or paying for personal training does not grant a
+commercial license. A written commercial agreement controls the rights it
+expressly grants.
+
+4. Included example models; additional offerings
+The three example models listed in section 1 are included with the SDK and may
+be used under section 2 without a separate model purchase. Section 3 applies
+to company and commercial use of these models as well as the SDK code.
+This license grants no right to receive training, additional or custom models,
+model updates, hosted services, or support without a separate offer or agreement.
+Nudge may charge separately for personal and commercial training and model
+access. Personal-use pricing, discounts, and free offers are determined by
+Nudge; none beyond the included example-model permission is promised by this
+license. Additional models are governed by the terms under which Nudge
+supplies them. A cryptographic signature authenticates a
+model's origin and integrity; it is not a license or evidence of payment.
+
+5. Reserved rights and termination
+All rights not expressly granted are reserved. Do not remove notices or
+misrepresent the Software's origin or the authority of a modified copy.
+This license does not restrict rights that applicable law makes nonwaivable.
+If you breach these terms, your permission under this license terminates and
+you must stop using the Software and delete copies except those legally
+required to be retained. Restrictions, reserved rights, and disclaimers survive.
+
+6. No warranty; limitation of liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+"AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+NUDGE AND ITS CONTRIBUTORS ARE NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, OR PUNITIVE DAMAGES OR LOST PROFITS, DATA, OR BUSINESS ARISING
+FROM THE SOFTWARE. WHERE LIABILITY CANNOT BE EXCLUDED, IT IS LIMITED TO THE
+MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW. NONWAIVABLE STATUTORY RIGHTS ARE
+UNAFFECTED.
+
+Commercial licensing: commercial@nudgeai.llc
+Contact Nudge before using this SDK for a company or commercial purpose.
